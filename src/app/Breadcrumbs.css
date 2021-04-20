@@ -1,0 +1,22 @@
+.breadcrumb {
+    display: inline-block;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb:nth-of-type(2),
+.breadcrumb:nth-of-type(3) {
+    color: gray;
+}
+
+.breadcrumb:nth-of-type(2)::before,
+.breadcrumb:nth-of-type(3)::before {
+    content: "/";
+    margin: 0 5px;
+}
+
+.wrap-bread {
+    padding: 10px;
+    margin-left: 40px;
+}

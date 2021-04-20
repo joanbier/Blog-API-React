@@ -1,0 +1,30 @@
+.wrapper-header {
+    position: relative;
+    background-image: url("../assets/img/header.jpg");
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.wrapper-text {
+    background-color: rgba(0, 0, 0, 0.548);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    padding: 10px 50px;
+
+}
+
+
+@media (max-width: 500px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+}
