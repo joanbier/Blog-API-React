@@ -1,15 +1,11 @@
 import React, { useState } from "react";
 import ShowRandomPhoto from "./Cards/RadomPhotoCard/ShowRandomPhoto";
+import { myAPIkey, UNSPLASH_BASE_URL } from "../constants/api";
 
 function RandomPhoto() {
   const [collection, setCollection] = useState([]);
 
   const fetchData = () => {
-    const UNSPLASH_BASE_URL = "https://api.unsplash.com";
-    // const UNSPLASH_ACCESS_KEY =
-    //   "3f664ef5e4273eb908008a62f5bb36a44010ddbd641644700adac1dcd8a48e49";
-    const myAPIkey = "nOVaG5lXsxMDTJ5PieGha00mJSFPG8v-QpnQxnBHmX8";
-
     fetch(`${UNSPLASH_BASE_URL}/photos/random`, {
       headers: { Authorization: `Client-ID ${myAPIkey}` }
     })
