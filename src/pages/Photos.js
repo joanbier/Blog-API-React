@@ -20,6 +20,7 @@ function Photos() {
         &#128513;{" "}
       </p>
       <PhotosCollectionByID id={id} />
+      {/* lol */}
     </>
   );
 }
